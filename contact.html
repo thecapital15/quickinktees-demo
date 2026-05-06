@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Quick Ink Tees</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #222222;
+      line-height: 1.6;
+    }
+
+    /* Navbar - Same as other pages */
+    .navbar {
+      background: #ffffff;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 3px solid #6a0dad;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .logo img { height: 90px; }
+    
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
+    .menu a {
+      color: #222222;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .menu a:hover { color: #6a0dad; }
+
+    .get-quote {
+      background: #ff8c00;
+      color: #000;
+      padding: 10px 26px;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .get-quote:hover {
+      background: #6a0dad;
+      color: white;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), 
+                  url('hero.png') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 140px 20px 80px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0 0 15px;
+      color: #00e6b8;
+    }
+
+    .content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 60px;
+    }
+    .info, .form {
+      flex: 1;
+      min-width: 340px;
+    }
+    .info h2, .form h2 {
+      color: #4B0082;
+      margin-bottom: 20px;
+    }
+    .contact-details p {
+      margin: 12px 0;
+      font-size: 1.1rem;
+    }
+    .contact-details strong {
+      color: #6a0dad;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 20px;
+      border: 2px solid #6a0dad;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    button {
+      width: 100%;
+      padding: 18px;
+      background: #ff8c00;
+      color: #000;
+      font-size: 1.2rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #6a0dad;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .navbar { flex-direction: column; gap: 15px; }
+      .menu { gap: 18px; justify-content: center; flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Quick Ink Tees">
+    </div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="#">Our Story</a>
+      <a href="#">Our Work</a>
+      <a href="https://www.freedombuilt.com" target="_blank">Freedom</a>
+      <a href="contact.html">Contact</a>
+      <a href="pricing-demo.html" class="get-quote">Get Quote</a>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Get In Touch</h1>
+    <p>We're here to help bring your custom apparel ideas to life.</p>
+  </div>
+
+  <div class="content">
+    <!-- Left: Contact Info + Map -->
+    <div class="info">
+      <h2>Visit Our Shop</h2>
+      <div class="contact-details">
+        <p><strong>Address:</strong><br>
+        28131 Robinson Rd, STE D<br>
+        Conroe, TX 77385</p>
+        
+        <p><strong>Phone:</strong><br>
+        <a href="tel:2818250900" style="color:#6a0dad; text-decoration:none;">(281) 825-0900</a></p>
+        
+        <p><strong>Email:</strong><br>
+        <a href="mailto:info@quickinktees.com" style="color:#6a0dad; text-decoration:none;">info@quickinktees.com</a></p>
+      </div>
+
+      <h2 style="margin-top:40px;">Find Us</h2>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.5!2d-95.456!3d30.25!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDE1JzAwLjAiTiA5NcKwMjcnMjAuMCJX!5e0!3m2!1sen!2sus!4v1720000000000" 
+        width="100%" 
+        height="380" 
+        style="border:0; border-radius:12px;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <!-- Right: Contact Form -->
+    <div class="form">
+      <h2>Send Us a Message</h2>
+      <form>
+        <input type="text" placeholder="Your Name *" required>
+        <input type="email" placeholder="Email Address *" required>
+        <input type="tel" placeholder="Phone Number">
+        <textarea rows="6" placeholder="Tell us about your project..." required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

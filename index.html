@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Ink Tees | Custom Screen Printing & Embroidery</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #222222;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #ffffff;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 3px solid #6a0dad;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .logo img { height: 90px; }
+    
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
+    .menu a {
+      color: #222222;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .menu a:hover { color: #6a0dad; }
+
+    .get-quote {
+      background: #ff8c00;
+      color: #000;
+      padding: 10px 26px;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.3s;
+      white-space: nowrap;
+    }
+    .get-quote:hover {
+      background: #6a0dad;
+      color: white;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), 
+                  url('hero.png') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 180px 20px 120px;
+    }
+    .hero h1 {
+      font-size: 3.4rem;
+      margin: 0 0 20px;
+      color: #00e6b8;
+    }
+    .hero p {
+      font-size: 1.35rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 16px 40px;
+      margin: 10px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+    .btn-primary {
+      background: #ff8c00;
+      color: #000;
+    }
+    .btn-primary:hover { background: #6a0dad; color: white; }
+    .btn-secondary {
+      background: transparent;
+      color: white;
+      border: 2px solid white;
+    }
+
+    .section {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .section h2 {
+      text-align: center;
+      font-size: 2.6rem;
+      margin-bottom: 50px;
+      color: #4B0082;
+    }
+
+    .services-grid, .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    .service-card, .benefit-card {
+      background: #f8f9fa;
+      border: 2px solid #6a0dad;
+      border-radius: 12px;
+      padding: 35px 25px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .service-card:hover, .benefit-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .cta {
+      background: linear-gradient(135deg, #2c0a4d, #4B0082);
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    @media (max-width: 768px) {
+      .navbar { flex-direction: column; gap: 15px; }
+      .menu { gap: 18px; justify-content: center; flex-wrap: wrap; }
+      .hero h1 { font-size: 2.5rem; }
+      .hero { padding: 120px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Quick Ink Tees">
+    </div>
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">Our Story</a>
+      <a href="#">Our Work</a>
+      <a href="https://www.freedombuilt.com" target="_blank">Freedom</a>
+      <a href="contact.html">Contact</a>
+      <a href="pricing-demo.html" class="get-quote">Get Quote</a>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Create Custom Apparel That Stands Out</h1>
+    <p>Screen Printing • Embroidery • DTG Printing • Fast Turnaround • Quality That Lasts</p>
+    <a href="pricing-demo.html" class="btn btn-primary">Get Instant Quote</a>
+    <a href="#" class="btn btn-secondary">Browse Our Work</a>
+  </div>
+
+  <!-- How It Works -->
+  <div class="section">
+    <h2>How It Works</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>1. Submit Your Design</h3>
+        <p>Upload your artwork or get free design help from our team.</p>
+      </div>
+      <div class="service-card">
+        <h3>2. Get Instant Pricing</h3>
+        <p>See real-time pricing with our calculator.</p>
+      </div>
+      <div class="service-card">
+        <h3>3. We Print & Deliver</h3>
+        <p>High-quality production with fast, reliable shipping.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="section" style="background:#f8f9fa;">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Screen Printing</h3>
+        <p>High-quality, durable prints perfect for bulk orders.</p>
+      </div>
+      <div class="service-card">
+        <h3>Embroidery</h3>
+        <p>Premium stitched logos for a professional finish.</p>
+      </div>
+      <div class="service-card">
+        <h3>DTG Printing</h3>
+        <p>Full-color prints with soft retail feel.</p>
+      </div>
+      <div class="service-card">
+        <h3>Custom Design</h3>
+        <p>Free consultation and professional artwork.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Why Choose Us -->
+  <div class="section">
+    <h2>Why Quick Ink Tees?</h2>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <h3>Fast Turnaround</h3>
+        <p>Most orders ship in 5–10 business days.</p>
+      </div>
+      <div class="benefit-card">
+        <h3>Transparent Pricing</h3>
+        <p>Live calculator with volume discounts.</p>
+      </div>
+      <div class="benefit-card">
+        <h3>Free Design Help</h3>
+        <p>Our team helps bring your ideas to life.</p>
+      </div>
+      <div class="benefit-card">
+        <h3>Easy Reorders</h3>
+        <p>No setup fees on repeat orders.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Final CTA -->
+  <div class="cta">
+    <h2 style="color:#00e6b8;">Ready to Bring Your Idea to Life?</h2>
+    <p style="font-size:1.35rem; max-width:700px; margin:0 auto 30px;">
+      Get an instant quote or start your custom project today.
+    </p>
+    <a href="pricing-demo.html" class="btn btn-primary" style="font-size:1.4rem; padding:22px 55px;">
+      Get Your Quote Now →
+    </a>
+  </div>
+
+</body>
+</html>
