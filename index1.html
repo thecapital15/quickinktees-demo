@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Ink Tees | Custom Screen Printing & Embroidery</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #222222;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #ffffff;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 3px solid #6a0dad;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .logo img { height: 90px; }
+    .menu {
+      display: flex;
+      gap: 25px;
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
+    .menu a {
+      color: #222222;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .menu a:hover { color: #6a0dad; }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 160px 20px 100px;
+    }
+    .hero h1 {
+      font-size: 3.2rem;
+      margin: 0 0 20px;
+      color: #00e6b8;
+    }
+    .hero p {
+      font-size: 1.4rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 16px 40px;
+      margin: 10px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+    .btn-primary {
+      background: #ff8c00;
+      color: #000;
+    }
+    .btn-primary:hover { background: #6a0dad; color: white; }
+    .btn-secondary {
+      background: transparent;
+      color: white;
+      border: 2px solid white;
+    }
+
+    /* Sections */
+    .section {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .section h2 {
+      text-align: center;
+      font-size: 2.6rem;
+      margin-bottom: 50px;
+      color: #4B0082;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    .service-card {
+      background: #f8f9fa;
+      border: 2px solid #6a0dad;
+      border-radius: 12px;
+      padding: 30px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .cta {
+      background: linear-gradient(135deg, #2c0a4d, #4B0082);
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .navbar { flex-direction: column; gap: 15px; }
+      .menu { gap: 15px; }
+      .hero h1 { font-size: 2.4rem; }
+      .hero { padding: 100px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Quick Ink Tees">
+    </div>
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">Our Story</a>
+      <a href="#">Our Work</a>
+      <a href="#">Our Services</a>
+      <a href="https://thecapital15.github.io/quickinktees-demo/">Get Quote</a>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Premium Custom Apparel That Stands Out</h1>
+    <p>Screen Printing • Embroidery • Direct to Garment • Fast Turnaround • No Minimums on Many Items</p>
+    <a href="https://thecapital15.github.io/quickinktees-demo/" class="btn btn-primary">Get Instant Quote</a>
+    <a href="#" class="btn btn-secondary">Browse Our
